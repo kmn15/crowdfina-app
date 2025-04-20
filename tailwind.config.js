@@ -1,7 +1,9 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
+    "./index.html",
     "./src/**/*.{js,jsx,ts,tsx}",
+    "./src/components/**/*.{js,jsx,ts,tsx}",
   ],
   darkMode: 'class',
   theme: {
@@ -19,6 +21,9 @@ module.exports = {
           800: '#9a3412',
           900: '#7c2d12',
         },
+      },
+      animation: {
+        'modal-pop': 'modal-pop 0.3s ease-out',
       },
     },
   },
